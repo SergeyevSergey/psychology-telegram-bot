@@ -1,0 +1,10 @@
+services:
+  bot:
+    build: .
+    container_name: bot
+    env_file:
+      - .env
+    volumes:
+      - ./:/app
+    expose:
+      - "8000"
